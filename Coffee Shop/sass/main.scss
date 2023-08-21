@@ -1,0 +1,26 @@
+//custom variables
+$primary: #0c477d;
+$light: #ffffe3;
+$body-bg: #FEFBF6;
+$body-color: #AD5336;
+$body-text-align: justify;
+
+//import the functions and variables
+@import 'E:/Bootstrap/node_modules/bootstrap/scss/_functions';
+@import 'E:/Bootstrap/node_modules/bootstrap/scss/_variables';
+
+$custom-theme-colors: (
+    "light-beige": #FEFBF6,
+    "comp-blue": #0c477d,
+    "light-yellow": #fff4a4,
+    "lighter-yellow": #ffffe3,
+    "clay-orange": #d79682,
+    "pale-brown": #f1cda3,
+    "bear-purple": #dcc0e1,
+    "main-brown": #AD5336
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// @import '../node_modules/bootstrap/scss/bootstrap';
+@import 'E:/Bootstrap/node_modules/bootstrap/scss/bootstrap'

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cai Tim's Coffee Bar</title>
+		<link rel="stylesheet" href="../css/main.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/x-icon" href="images/pumpkin.png">
+	</head>
+	<body>
+		<div class="container-lg mx-5 p-0">
+			<div class="row justify-content-around">
+				<!-- SIDE BAR -->
+				<div class="col-2 side-bar bg-lighter-yellow py-5 border border-4 rounded-4 rounded-end-0 border-end-0 border-pale-brown">
+					<ul class="list-group list-group-flush h6 text-end p-3">
+						<li class="list-group-item bg-transparent  text-main-brown border-pale-brown">
+							<a href="#todo-list" class="nav-link">To-do list</a>
+						</li>
+						<li class="list-group-item bg-transparent  text-main-brown border-pale-brown">
+							<a class="nav-link" href="#current-food-system">Current Food System</a>
+						</li>
+						<li class="list-group-item bg-transparent  text-main-brown border-pale-brown">
+							<a class="nav-link" href="#cards">Cards</a>
+						</li>
+						<li class="list-group-item bg-transparent  text-main-brown border-pale-brown">
+							<a class="nav-link" href="#dishes-in-menu">Menu</a>
+						</li>
+						<li class="list-group-item bg-transparent  text-main-brown border-pale-brown">
+							<a href="#reviews" class="nav-link">Reviews</a>
+						</li>
+						<li class="list-group-item bg-transparent  text-main-brown border-pale-brown">
+							<a href="#contact" class="nav-link">Get in touch</a>
+						</li>
+						<li class="list-group-item bg-transparent  text-main-brown border-pale-brown">
+							<a href="../tabs.html" class="nav-link">Tab file</a>
+						</li>
+						<li class="list-group-item bg-transparent  text-main-brown border-pale-brown d-md-none">
+							<a class="nav-link" href="#bear-breads">Bear Breads</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Main content here -->
+				<div class="col-10 main me-0">
+					<nav class="navbar border border-5 rounded-4 border-bear-purple" id="navbar">
+						<div class="container-xxl ">
+							<p class="navbar-brand m-0 d-flex align-items-center ">
+								<img src="images/bread.png" width="60" height="60" class="d-inline-block align-text-top" alt="">
+								<span class="fw-bold h4 m-0">Cai Tim's Page</span>
+							</p>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon">
+							</span>
+							</button>
+							<!-- navbar links -->
+							<div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link" href="#current-food-system">Current Food System</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#dishes-in-menu">Menu</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#current-food-system">Current Food System</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#cards">Cards</a>
+									</li>
+									<li class="nav-item">
+										<a href="#reviews" class="nav-link">Reviews</a>
+									</li>
+									<li class="nav-item d-md-none">
+										<a class="nav-link" href="#bear-breads">Bear Breads</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+					<div class="logo"><img src='images/flower.png'></div>
+					<div class="head-title text-center text-primary">
+						<p>Cai Tim</p>
+						<p>Cafe</p>
+					</div>
+					<div class="container-lg my-5">
+						<div class="row justify-content-between my-2">
+							<div class="col-md-6 d-none d-md-block border-end border-warning">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nulla laborum, quia deleniti at itaque eligendi veritatis vero minima voluptatum eum recusandae tempore cumque ab repellendus quas reprehenderit dicta magni?</p>
+								<img src="images/mashmallow.jpg" class="img-fluid" alt="socks" width="50%">
+							</div>
+							<div class="col-md-6  d-flex  flex-column">
+								<p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis nihil quasi rem?</p>
+								<img src="images/christmas.jpg" class="img-fluid mb-0 " alt="chrizzmas" width="50%">
+							</div>
+						</div>
+					</div>
+					<br>
+					<hr class="hr my-5">
+					<div class="todo-list my-5 mt-5" id="todo-list">
+						<div class="d-flex align-items-center">
+							<img src="images/paper.png" class="m-0" width="10%" alt="">
+							<p class="todo-list__title me-4 display-4 text-primary">Todo List</p>
+							<span class="progress">
+								<div class="progress-bar bg-clay-orange" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+									<span class="progress-text ml-2">0%</span>
+								</div>
+							</span>
+						</div>
+						<br>
+						<div class="todo-items">
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo1">
+								<label class="form-check-label p-1 ms-2" for="todo1">
+								Tutorial #1 - Intro & Setup
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo2">
+								<label class="form-check-label p-1 ms-2" for="todo2">
+								Tutorial #2 - Bootstrap 5 New Features
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo3">
+								<label class="form-check-label p-1 ms-2" for="todo3">
+								Tutorial #3 - Colours & Typography
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo4">
+								<label class="form-check-label p-1 ms-2" for="todo4">
+								Tutorial #4 - Buttons & Button Groups
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo5">
+								<label class="form-check-label p-1 ms-2" for="todo5">
+								Tutorial #5 - Utility Classes
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo6">
+								<label class="form-check-label p-1 ms-2" for="todo6">
+								Tutorial #6 - Containers
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo7">
+								<label class="form-check-label p-1 ms-2" for="todo7">
+								Tutorial #7 - Grid Layout (part 1)
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo8">
+								<label class="form-check-label p-1 ms-2" for="todo8">
+								Tutorial #8 - Grid Layout (part 2)
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo9">
+								<label class="form-check-label p-1 ms-2" for="todo9">
+								Tutorial #9 - Navbars
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo10">
+								<label class="form-check-label p-1 ms-2" for="todo10">
+								Tutorial #10 - Cards
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo11">
+								<label class="form-check-label p-1 ms-2" for="todo11">
+								Tutorial #11 - Accordions
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo12">
+								<label class="form-check-label p-1 ms-2" for="todo12">
+								Tutorial #12 - List Groups
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo13">
+								<label class="form-check-label p-1 ms-2" for="todo13">
+								Tutorial #13 - Bootstrap Icons
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo14">
+								<label class="form-check-label p-1 ms-2" for="todo14">
+								Tutorial #14 - Working with Forms
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo15">
+								<label class="form-check-label p-1 ms-2" for="todo15">
+								Tutorial #15 - Tooltips
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo16">
+								<label class="form-check-label p-1 ms-2" for="todo16">
+								Tutorial #16 - Modals
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo17">
+								<label class="form-check-label p-1 ms-2" for="todo17">
+								Tutorial #17 - Offcanvas
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo18">
+								<label class="form-check-label p-1 ms-2" for="todo18">
+								Tutorial #18 - Dropdowns
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo19">
+								<label class="form-check-label p-1 ms-2" for="todo19">
+								Tutorial #19 - Customizing Bootstrap
+								</label>
+							</div>
+							<div class="form-check d-flex align-items-center">
+								<input class="form-check-input" type="checkbox" id="todo20">
+								<label class="form-check-label p-1 ms-2" for="todo20">
+								Tutorial #20 - Tabs
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="motivational-quote">
+						<p class="motivational-quote__content text-center">Lorem ipsum dolor <a class="a__main-text tt" data-bs-placement="bottom" title="My learning progress!" href="https://docs.google.com/spreadsheets/d/1RowNf3qbCHYhsbUdjNM3VvUWD7qcnlAfodslaCFOGak/edit#gid=486391395">sit amet consectetur</a>, adipisicing elit. Nihil, facilis dignissimos eaque minus recusandae in labore repellat eligendi. Nobis illo vero laborum sunt iusto iste aperiam dolore fuga, ullam possimus magnam quisquam unde quibusdam perferendis incidunt veniam recusandae rerum! Quisquam, odit! In dignissimos quo rerum cupiditate! Quidem totam reiciendis ipsa.</p>
+						<!-- <footer class="blockquote-footer">Famous Author</footer> -->
+						<p class="motivational_author text-end">-Famous Author</p>
+					</div>
+					<br>
+					<hr class="hr my-5">
+					<div id="current-food-system">
+						<h1 class="text-center">Current Food System</h1>
+						<p>
+							The current food system is characterized by large-scale industrial agriculture,
+							global supply chains, and high resource consumption.
+						</p>
+						<ul>
+							<li>Widespread use of chemical fertilizers and pesticides</li>
+							<li>High dependency on fossil fuels for transportation and processing</li>
+							<li>Loss of biodiversity in crops and ecosystems</li>
+							<li>Food waste at various stages of production and consumption</li>
+							<li>Issues of food insecurity and unequal distribution</li>
+						</ul>
+						<img src="https://www.foodunfolded.com/media/images/_thumbsquarelarge/Article_Banner_Emmer_Wheat_%281%29.webp" alt="Current Food System" width="50%">
+					</div>
+					<hr class="hr my-5">
+					<br>
+					<section id="cards">
+						<div class="container-lg cards__container">
+							<div class="text-center">
+								<p class="display-6">Picture Cards</p>
+								<p class="lead text-clay-orange">Choose a card that you like</p>
+							</div>
+							<div class="row my-5 align-items-center justify-content-center g-5">
+								<div class="col-8 col-lg-4 col-xl-3">
+									<div class="card border border-pale-brown">
+										<div class="card-body text-center py-3 px-2">
+											<h4 class="card-title">Pic 1</h4>
+											<p class="card-subtitle text-clay-orange h6">Testing card feature</p>
+											<p class="display-5 my-4 text-primary fw-bold">$20K</p>
+											<p class="card-text  h6 text-clay-orange d-none d-lg-block">Less noise.</p>
+											<a href="#" class="btn btn-outline-primary btn-lg mt-3">Click</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-9 col-lg-4">
+									<div class="card border-primary border-2">
+										<div class="card-header bg-lighter-yellow text-center text-primary">Most Popular</div>
+										<div class="card-body text-center py-4">
+											<h4 class="card-title">Music</h4>
+											<p class="lead card-subtitle text-clay-orange">Testing card feature</p>
+											<p class="display-5 my-4 text-primary fw-bold">$20K</p>
+											<p class="card-text  h6 text-clay-orange d-none d-lg-block">Lorem ipsum dolor sit amet.</p>
+											<a href="#" class="btn btn-outline-primary btn-lg mt-3">Click</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-8 col-lg-4 col-xl-3">
+									<div class="card border border-pale-brown">
+										<img src="images/heart.jpg" class="card-img-top card-img"  alt="...">
+										<div class="card-body text-center">
+											<h5 class="card-title">Card title</h5>
+											<p class="card-text h6 text-clay-orange mb-3">More hearts.</p>
+											<a href="#" class="btn btn-outline-primary btn-lg mt-3">Click</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<br>
+					<hr class="hr my-5">
+					<br>
+					<section id="dishes-in-menu">
+						<div class="container-md">
+							<div class="text-center">
+								<p class="display-6 mb-1">What we have on the menu</p>
+								<p class="lead text-clay-orange mb-5">Only a few items, but they're really good!</p>
+							</div>
+							<div class="row mb-5 g-5 justify-content-around align-items-center">
+								<div class="col-4 d-flex justify-content-center">
+									<img src="https://i.pinimg.com/564x/24/1b/ee/241beefa2702d68bb25a99bc786fc5d1.jpg" alt="happy meal" class="row__img" >
+								</div>
+								<div class="col-4 d-flex justify-content-center">
+									<img src="https://i.pinimg.com/originals/34/bc/ea/34bceaf6676bf4743afd59b694308c12.jpg" alt="coffee bar at home" class="row__img" >
+								</div>
+								<div class="col-4 d-flex justify-content-center">
+									<img src="https://i.pinimg.com/564x/3f/43/4f/3f434ff4dc914222f7c101bfc0af9681.jpg" alt="boba and tarts" class="row__img" >
+								</div>
+							</div>
+							<div class="row mb-5 g-5 justify-content-around align-items-center">
+								<!-- Picture -->
+								<div class="col-lg-4">
+									<img src="images/coffee.png" class="menu-img img-fluid" alt="coffee transparent">
+								</div>
+								<!-- Accordion -->
+								<div class="col-10 col-lg-6">
+									<div class="accordion" id="menu">
+										<!-- Accordion Item 1 -->
+										<div class="accordion-item">
+											<p class="accordion-header" id="heading-1">
+												<button class="accordion-button text-primary bg-lighter-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#menu-item-1" aria-expanded="true" aria-controls="menu-item-1">
+													<p class="h6">Walnut Soy Milk Coffee</p>													
+												</button>
+											</p>
+											<div id="menu-item-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#menu">
+												<div class="accordion-body">
+													<p class="h6">Indulge in the rich flavors of our Walnut Soy Milk Coffee. Made with freshly roasted walnuts and handcrafted soy milk, this delightful beverage offers a perfect blend of nuttiness and creaminess.</p>
+												</div>
+											</div>
+										</div>
+										<!-- Accordion Item 2 -->
+										<div class="accordion-item">
+											<p class="accordion-header" id="heading-2">
+												<button class="accordion-button text-primary bg-lighter-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#menu-item-2" aria-expanded="true" aria-controls="menu-item-2">
+													<p class="h6">Matcha Icecream</p>												
+												</button>
+											</p>
+											<div id="menu-item-2" class="accordion-collapse collapse show" aria-labelledby="heading-2" data-bs-parent="#menu">
+												<div class="accordion-body">
+													<p class="h6">Experience the delicate balance of flavors in our Matcha Ice Cream. Crafted from premium matcha leaves, this ice cream brings together the earthy essence of matcha with the smoothness of creamy goodness.</p>
+												</div>
+											</div>
+										</div>
+										<!-- Accordion Item 3 -->
+										<div class="accordion-item">
+											<p class="accordion-header" id="heading-3">
+												<button class="accordion-button text-primary bg-lighter-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#menu-item-3" aria-expanded="true" aria-controls="menu-item-3">
+													<p class="h6">Brownie Cookies</p>
+												</button>
+											</p>
+											<div id="menu-item-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#menu">
+												<div class="accordion-body">
+													<p class="h6">Delight your taste buds with our Brownie Cookies. These irresistible treats combine the chewiness of brownies with the crunchiness of cookies, offering a divine medley of textures and flavors.</p>
+												</div>
+											</div>
+										</div>
+										<!-- Accordion Item 4 -->
+										<div class="accordion-item">
+											<p class="accordion-header" id="heading-4">
+												<button class="accordion-button text-primary bg-lighter-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#menu-item-4" aria-expanded="true" aria-controls="menu-item-4">
+													<p class="h6">Mango Float</p>													
+												</button>
+											</p>
+											<div id="menu-item-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#menu">
+												<div class="accordion-body">
+													<p class="h6">Savor the tropical goodness of our Mango Float. Made with luscious mangoes and layers of creamy goodness, this dessert provides a refreshing burst of flavors that transport you to paradise.</p>
+												</div>
+											</div>
+										</div>
+										<!-- Accordion Item 5 -->
+										<div class="accordion-item">
+											<p class="accordion-header" id="heading-5">
+												<button class="accordion-button text-primary bg-lighter-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#menu-item-5" aria-expanded="true" aria-controls="menu-item-5">
+													<p class="h6"></p>
+													Iced Americano
+												</button>
+											</p>
+											<div id="menu-item-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#menu">
+												<div class="accordion-body">
+													<p class="h6">Energize your day with our Iced Americano. This classic coffee beverage combines bold espresso shots with chilled water, offering a revitalizing and invigorating experience that fuels your senses.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="long-paras text-justify">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia, alias ipsam aperiam unde veniam tempore pariatur soluta praesentium nihil aliquam exercitationem rerum deleniti maxime, magni repudiandae debitis voluptate? Rem quam ducimus ea blanditiis, quod minus hic deserunt praesentium. Obcaecati omnis aliquam in maxime hic, reprehenderit odio harum id porro fugiat ipsa explicabo excepturi, velit eveniet praesentium, nostrum voluptatibus. Odit voluptates labore voluptatum rerum laudantium similique blanditiis a? Nostrum corrupti, doloremque officiis officia quisquam unde commodi, consectetur reprehenderit odio inventore maiores ut! Voluptatum commodi veniam non nihil perspiciatis magni blanditiis animi voluptates quis quia quae dolorem obcaecati eum, voluptatibus nulla assumenda vitae necessitatibus nesciunt. Ut iusto doloribus labore sed harum velit eaque mollitia animi magnam! Amet modi dolores ea illo illum ad, inventore asperiores quo officia recusandae consequuntur nobis adipisci ipsam repudiandae eius quas culpa aperiam doloribus, dolorum qui iste explicabo rerum magnam. Temporibus repellat repellendus quo fugiat consequatur aut.</p>
+						<div class="containern justify-content-between" id="suck-now">
+							<div class="row my-5">
+								<div class="col-4 d-flex justify-content-center">
+									<img src="https://i.pinimg.com/564x/de/8a/19/de8a198dd85cdf2b07eec143e77b3826.jpg" alt="meal" class="row__img" >
+								</div>
+								<div class="col-4 d-flex justify-content-center">
+									<img src="https://i.pinimg.com/564x/cc/be/8d/ccbe8d14cde917db18a0cbd5a0a9860a.jpg" alt="image to suck" class="row__img" >
+								</div>
+								<div class="col-4 d-flex justify-content-center">
+									<img src="https://i.pinimg.com/564x/de/b4/33/deb433899fadd2bad3a0c5900cc85f22.jpg" alt="image to suck" class="row__img" >
+								</div>
+							</div>
+						</div>
+						<p>Nam recusandae neque aspernatur incidunt <a class="a__main-text" href="https://www.theguardian.com/food/ng-interactive/2022/apr/14/climate-crisis-food-systems-not-ready-biodiversity" target="_blank">molestias debitis</a>, dolor harum labore quo earum nihil saepe possimus magni numquam deserunt assumenda quos quasi beatae dicta eveniet, molestiae quas, pariatur nesciunt maiores. Repudiandae voluptatum quis itaque labore tempore voluptatibus nulla placeat temporibus odit adipisci amet error vitae, nemo possimus iure impedit nesciunt magnam consequatur porro fugit aliquam beatae? Blanditiis natus cupiditate quas tempora modi repellat cum, ipsa necessitatibus consequatur quibusdam alias aspernatur perferendis possimus quaerat nobis laborum mollitia earum, commodi inventore exercitationem debitis magni quod totam nulla. Debitis ab accusantium aperiam reprehenderit, placeat doloribus ducimus quidem libero error dolores nemo blanditiis aut numquam at rem voluptatum maiores tempora ea consequuntur harum dolor temporibus enim? Reprehenderit totam cumque mollitia qui quasi sit consequatur quos debitis nesciunt! Nihil incidunt laboriosam in omnis laborum? Nemo hic distinctio inventore iure illum exercitationem assumenda sed dignissimos ut reiciendis voluptate, in iusto, officia ullam pariatur libero adipisci a sunt!</p>
+					</div>
+					<!-- Back to top button -->
+					<div  class="btn__go-up text-primary text-center" onclick="topFunction()"  id="btn-back-to-top">
+						<a href="#">
+							<!-- <img src="images/coffee latte.png" alt="" width="80px"> -->
+							<img src="images/gingerbread.png" alt="" width="60px" class="pb-2">
+							<p class="btn__text d-block border border-2 border-primary rounded-4 p-0 m-0 bg-lighter-yellow">Go up!</p>
+						</a>
+					</div>
+					<!-- Customer Reviews -->
+					<hr class="hr my-5">
+					<section id="reviews">
+						<div class="container-lg container__reviews">
+							<div class="text-center">
+								<img src="images/strawberry.png" width="15%" alt="">
+								<p class="display-6">Cafe & Bakery Reviews</p>
+								<p class="lead">
+									<i class="bi bi-stars"></i>
+									What our patrons are saying about their experience...
+								</p>
+							</div>
+							<div class="row justify-content-center my-5">
+								<div class="col-lg-11">
+									<div class="list-group list-group-flush">
+										<div class="list-group-item bg-transparent  text-primary border-pale-brown py-3">
+											<div class="review-stars">
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+											</div>
+											<p class="review-content mb-1 text-primary">
+												I absolutely love the variety of baked goods and the warm ambiance of the cafe. The pastries are divine, and the service is top-notch. A must-visit for dessert enthusiasts!
+											</p>
+											<small class="reviewer text-main-brown">
+											<i class="bi bi-person-circle me-1"></i>
+											Review by Emily</small>
+										</div>
+										<div class="list-group-item  bg-transparent py-3">
+											<div class="review-stars">
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+											</div>
+											<p class="review-content mb-1 text-primary">
+												Walking into this cafe feels like stepping into a world of delightful aromas. The pastries are beautifully crafted, and the staff is always welcoming. Highly recommended!
+											</p>
+											<small class="reviewer text-main-brown">
+											<i class="bi bi-person-circle me-1"></i>
+											Review by Alex</small>
+										</div>
+										<div class="list-group-item  bg-transparent py-3">
+											<div class="review-stars">
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+											</div>
+											<p class="review-content mb-1 text-primary">
+												I can't resist coming back for more of their mouthwatering treats. The cozy decor and scrumptious pastries make it a perfect spot for a relaxing afternoon. Truly a gem!
+											</p>
+											<small class="reviewer text-main-brown">
+											<i class="bi bi-person-circle me-1"></i>
+											Review by Liam</small>
+										</div>
+										<div class="list-group-item  bg-transparent py-3">
+											<div class="review-stars">
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star text-light-yellow"></i>
+											</div>
+											<p class="review-content mb-1 text-primary">
+												As a dessert lover, I've found my haven here. The variety of sweets they offer is impressive, and each treat is a masterpiece. The ambiance adds to the whole experience.
+											</p>
+											<small class="reviewer text-main-brown">
+											<i class="bi bi-person-circle me-1"></i>
+											Review by Mia</small>
+										</div>
+										<div class="list-group-item  bg-transparent py-3">
+											<div class="review-stars">
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-fill text-light-yellow"></i>
+												<i class="bi bi-star-half text-light-yellow"></i>
+											</div>
+											<p class="review-content mb-1 text-primary">
+												Whenever I need a cozy getaway, this cafe is my choice. The pastries are always fresh and oh-so-delicious. It's a perfect spot to unwind and indulge in treats.
+											</p>
+											<small class="reviewer text-main-brown">
+											<i class="bi bi-person-circle me-1"></i>
+											Review by Noah</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<hr class="hr my-5">
+					<br>
+					<div class="variables container text-center" id="bear-breads">
+						<div class="square bg-bear-purple">
+							<p>Hey,</p>
+							<p>Hey!</p>
+						</div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+						<div class="square bg-bear-purple"><img src="images/bread.png" class="bread"></div>
+					</div>
+					<br>
+					<br>
+					<hr class="hr my-5">
+					<br>
+					<!-- contact form -->
+					<!-- form-control, form-label, form-select, input-group, input-group-text -->
+					<section id="contact">
+						<div class="container-lg bg-light">
+							<div class="row g-5 justify-content-around">
+								<div class="text-center">
+									<img class="mb-3" src="images/touch_cup.png" width="20%" alt="">
+									<h2>Get in Touch</h2>
+									<p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+								</div>
+								<div class="row justify-content-center my-5">
+									<div class="col-lg-4">
+										<form>
+											<label for="email" class="form-label">Email address:</label>
+											<div class="input-group mb-4">
+												<span class="input-group-text">
+												<i class="bi bi-envelope-fill"></i>
+												</span>
+												<input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+											</div>
+											<label for="name" class="form-label">Name:</label>
+											<div class="mb-4 input-group">
+												<span class="input-group-text tt" data-bs-placement="top" title="Aww you have very pretty name 💛">
+												<i class="bi bi-person-fill"></i>
+												</span>
+												<input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+											</div>
+										</form>
+									</div>
+									<div class="col-lg-6">
+										<form>
+											<label for="subject" class="form-label">What is your question about?</label>
+											<div class="mb-4 input-group">
+												<span class="input-group-text">
+												<i class="bi bi-chat-right-dots-fill"></i>
+												</span>
+												<select class="form-select text-main-brown" id="subject">
+													<option value="pricing" selected>Pricing query</option>
+													<option value="content">Content query</option>
+													<option value="other">Other query</option>
+												</select>
+											</div>
+											<div class="mb-4 mt-5 form-floating">
+												<textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+												<label for="query">Your query...</label>
+											</div>
+										</form>
+									</div>
+									<div class="mb-4 text-center">
+										<button type="button" class="btn btn-submit btn-primary border-0" data-bs-toggle="modal" data-bs-target="#contact-modal">Submit</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- <footer class="footer-navbar">
+						<a href="#current-food-system">One</a> | 
+						<a href="#sustainable-agri-problems">Two</a> | 
+						<a href="#current-food-system">Three</a>
+						</footer> -->
+					</main>
+				</div>
+			</div>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+			<script>
+				const checkboxes = document.querySelectorAll('.form-check-input');
+				const progressBar = document.querySelector('.progress-bar');
+				const progressText = document.querySelector('.progress-text');
+				const totalTodos = checkboxes.length;
+				
+				checkboxes.forEach((checkbox) => {
+				    checkbox.addEventListener('change', updateProgressBar);
+				});
+				
+				function updateProgressBar() {
+				    const completedTodos = document.querySelectorAll('.form-check-input:checked').length;
+				    const progress = (completedTodos / totalTodos) * 100;
+				    progressBar.style.width = progress + '%';
+				    progressBar.setAttribute('aria-valuenow', progress);
+				    progressText.textContent = `${progress.toFixed(0)}%`;
+				}
+			</script>
+			<script>
+				const tooltips = document.querySelectorAll('.tt')
+				tooltips.forEach(t => {
+				new bootstrap.Tooltip(t)
+				})
+			</script>
+			<div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header bg-light-beige fw-bold">
+							<p class="modal-title fw-bold h6" id="modal-title">Contact Form Submission</p>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body rounded text-center text-primary">
+							<!-- Add suitable content for the modal here -->
+							<p class="h6">Great, your contact form has been submitted successfully! 🌼</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	</div>
+</html>
